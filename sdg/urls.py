@@ -19,7 +19,7 @@ from goals import views
 
 urlpatterns = [
     path(r'', views.home),
-    path(r'tni', views.tni),
+    path(r'tni/<goal_no>', views.tni),
     path(r'tracking', views.tracking),
     path(r'matrix', views.matrix),
     #path(r'home', views.home),

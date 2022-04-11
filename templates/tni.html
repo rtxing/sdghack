@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %} Sustainable Development Goals
+{% endblock %}
+
+
+{% block content %}
+					
+
+
+<div class="container goalgrid">
+	<div class="row">
+
+		{% for t in tgts %}
+		
+		
+	<a href="/tni/">	<h4> {{ t.attributes.target_no }}   	{{ t.attributes.Target_desc }}.     	{{ i.attributes.Goal_short }}  </h4>
+		
+		</a>
+
+        {% for i in inds %}
+		
+                    {% if  i.attributes.target_id  ==  t.attributes.target_no    %}
+  	<h6> 	    	{{ i.attributes.Indicator_id }}    	{{ i.attributes.Indicator_desc }}   
+          
+    </h6>
+                        
+                   {% endif %}
+	
+
+		{% endfor %}
+
+
+	
+
+		{% endfor %}
+	</div>
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}

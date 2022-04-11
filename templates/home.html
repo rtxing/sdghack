@@ -14,8 +14,10 @@
 		{% for i in goals %}
 		<div class="col-md-2 goalbox">
 		
-				{{ i.attributes.Goal_short }}
-		</div>
+	<a href="/tni/{{ i.attributes.Goal_no }}">	<h4>	{{ i.attributes.Goal_no }}.     	{{ i.attributes.Goal_short }}  </h4>
+		
+		</a>
+	</div>
 
 		{% endfor %}
 	</div>

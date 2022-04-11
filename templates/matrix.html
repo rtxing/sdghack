@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %} Sustainable Development Goals
+{% endblock %}
+
+
+{% block content %}
+					
+
+
+<div class="container goalgrid">
+	<div class="row">
+        <div class="col-md-12"></div>
+        <h2>Correlation Between Goals</h2>
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+                <th>Goals </th>
+              <th>Goal 1</th>
+              <th>Goal 2</th>
+              <th>Goal 3</th>
+              <th>Goal 4</th>
+              <th>Goal 5</th>
+              <th>Goal 6</th>
+              <th>Goal 7 </th>
+              <th>Goal 8 </th>
+              <th>Goal 9</th>
+              <th>Goal 10 </th>
+              <th>Goal 11</th>
+              <th>Goal 12</th>
+              <th>Goal 13</th>
+              <th>Goal 14</th>
+              <th>Goal 15</th>
+              <th>Goal 16</th>
+              <th>Goal 17</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            
+            
+                {% for c in corrs %}
+                        
+                <tr>
+                     <td> <b> Goal {{ forloop.counter }} </b> </td>
+                            {% for k,v in c.items %}
+                                    
+
+
+                            <td>
+                                    {{ v }}
+
+                            </td>
+
+           
+
+                             {% endfor %}
+
+                            </tr>
+
+               {% endfor %}
+    
+             
+    
+
+
+
+
+           
+          </tbody>
+        </table>
+	</div>
+</div>
+
+</div>
+
+
+
+
+
+
+{% endblock %}
