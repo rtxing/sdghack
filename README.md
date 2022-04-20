@@ -1,6 +1,7 @@
 # Global Goals Graph
-**Contributers and Contact Information: Tiruvenganna Rao R and Rana Alam
-Problem Statement addressed (or explain your own): Enable Search For United Nations Sustainable Development Goals**
+**Contributers and Contact Information: Tiruvenganna Rao R and Rana Alam**
+<br>
+**Problem Statement addressed (or explain your own): Enable Search For United Nations Sustainable Development Goals**
 
 ## Description:
 Explain what your project is trying to accomplish and how you utilized graph technology to achieve those goals. Describe how your submission is relevant to the problem statement and why it is impactful to the world. Remember to link your submission video here.
