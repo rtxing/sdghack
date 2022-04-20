@@ -41,12 +41,13 @@ The size of the market depends on the goal. For example Goal no. 11: Sustainable
 
 ## Other Additions
 •	Data: The data and Tiger Graph schema, data mapping and queries are present in the data folder
+
 •	Technology Stack: Python, Django, Bootstrap, Tiger Graph 
 
 
 ## Visuals: 
        
-**Link to our Website where the solution is hosted: https://rtrao99.pythonanywhere.com/ **
+**Link to our Website where the solution is hosted: https://rtrao99.pythonanywhere.com/**
 
 ## Dependencies
 The dependencies are mentioned in the requirements.txt file.
@@ -59,20 +60,14 @@ This app is built with Python 3.8.10, Django 3.2
 
 Clone the repository:
 
-git clone https://github.com/rtxing/sdghack.git
+>>> git clone https://github.com/rtxing/sdghack.git
 
-You can download at Python from : https://www.python.org/downloads/
+You can download at Python from : https://www.python.org/downloads/ , After installing Python and adding the path to environment variables, You can install virtualenv by  running below command
 
-After installing Python and adding the path to environment variables,
-
-You can install virtualenv by  running below command
-
-python -m pip install virtualenv
+>>> python -m pip install virtualenv
 
 
-
-
-Access permissions have been given to TigerGraph-MDC  and devposttesting
+Access permissions have been given to TigerGraph-MDC  and devpost testing
 
 To run the project From command line run the below commands:
 
@@ -88,15 +83,18 @@ To run the project From command line run the below commands:
 The server will be running at : http://127.0.0.1:8000/
 
 The data and Tiger Graph schema, data mapping and queries are present in the data folder 
-Known Issues / Limitations
-Some queries are not optimized and take a little longer to execute.
-Not all features of Knowledge Graph are implemented.
-Future Enhancements
- We want to integrate our solution with blockchain and provide tokens / incentivization for good social behavior.
-We want to show the SDG visually more dynamically.
-Reflections
-We did requirements analysis, designing the user interfaces, database design , front end and backend development. We used datasets from UN open data sets. The is scope to optimise the database design and capture requirements better.
-References
+
+## Conclusion
+The application fully finished yet has some limitations that we would like to talk about: Firstly Some queries are not optimized and take a little longer to execute. Secondly, We did not implement every feature of Knowledge Graph that are normally present, we did not implement 2-3 features which were either useless for our purpose or out of our skillset. This was first time interacting with graph for both of us teammates. Therefore we faced a lot of challenges we faced during the implentation of this project such as:
+
+Understanding the interactions between the SDGs.
+Learning Tiger Graph, designing and writing queries.
+Managing Time effectively.
+Come up with a practical solution to achieve the UN SDGs
+High level of diversity found between different datasets while integrating.
+However we did all of our best efforts to overcome all the problems we faced, with the help of mentors and fellow competitiors we were successfully able to complete the project. We learnt a great ton of graph and writing GSQL queries, integrating datasets in graph databases, connecting the database to a python framweork, interconnections between UN sustainable development goals and overall working as a team. We had many more features planned for Global Goals Graph, but we couldnt implement them due to time shortage (we started the project very late, we learnt much more time learning) and some features because it was not doable with our skillset. In the future, however, we will improve the design for the application, enhance the versatility of the graph and reduce the response time from the backend, use frontend libraries to potray the information in a more eye pleasing and understandable manner, and integrate much more datasets into the database to have an ever larger variety of information available. Thankyou to tiger graph for giving us such a beautiful opportunity to work on this project. We really enjoyed it and learned a lot in the process ✌🏻✌🏻.
+
+
 Some reference links:
 https://www.researchgate.net/publication/314450804_Achieving_Sustainable_Development_through_Value_Chain
 https://knowsdgs.jrc.ec.europa.eu/interlinkages-visualization
