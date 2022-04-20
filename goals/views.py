@@ -20,7 +20,7 @@ def home(request):
 
     #print(authToken)
 
-    conn = tg.TigerGraphConnection(host="https://rtprac1.i.tgcloud.io/", graphname="Goals", username="tigergraph", password="tigergraph", apiToken="nthnehl40m4ftjmefsl8vc3uosfg4isc")
+    conn = tg.TigerGraphConnection(host="https://rtprac1.i.tgcloud.io/", graphname="Goals", username="tigergraph", password="tigergraph", apiToken="03sctnp182af43kooj0mdj4ul1c995dt")
 
     
     #x = conn.getToken("l69n326p9eavr7asdhrq6ubike8lk53e", "1000000")
@@ -46,7 +46,7 @@ def tni(request, goal_no):
     #context_dict['problems'] = #
     print(goal_no)
     params = {'gid': goal_no} 
-    conn = tg.TigerGraphConnection(host="https://rtprac1.i.tgcloud.io/", graphname="Goals", username="tigergraph", password="tigergraph", apiToken="nthnehl40m4ftjmefsl8vc3uosfg4isc")
+    conn = tg.TigerGraphConnection(host="https://rtprac1.i.tgcloud.io/", graphname="Goals", username="tigergraph", password="tigergraph", apiToken="03sctnp182af43kooj0mdj4ul1c995dt")
 
     preInstalledResult = conn.runInstalledQuery("getTnI", params) 
 
@@ -63,6 +63,7 @@ def tni(request, goal_no):
         print(i)
     print("--------------------------------")
     context_dict['inds'] = preInstalledResult[1]['L2']
+    context_dict['goal_no'] = goal_no
     for j in context_dict['inds']:
         print(j)
 
@@ -75,13 +76,47 @@ def tracking(request):
     return render(request, 'home.html', context_dict)
 
 
+
+def success(request):
+    context_dict = {}
+    #context_dict['problems'] = #
+    return render(request, 'success.html', context_dict)
+
+def goalsinter(request, goal_no):
+    context_dict = {}
+    context_dict['goal_no'] = goal_no
+    #context_dict['problems'] = #
+    return render(request, 'goalsinter.html', context_dict)
+
+
+def partnerships(request, goal_no):
+    context_dict = {}
+    context_dict['goal_no'] = goal_no
+    #context_dict['problems'] = #
+    return render(request, 'partnerships.html', context_dict)
+
+
+def value(request, goal_no):
+    context_dict = {}
+    context_dict['goal_no'] = goal_no
+    #context_dict['problems'] = #
+    return render(request, 'value.html', context_dict)
+
+
+def kg(request, goal_no):
+    context_dict = {}
+    context_dict['goal_no'] = goal_no
+    return render(request, 'kg.html', context_dict)
+
+
+
 def matrix(request):
     context_dict = {}
     #context_dict['problems'] = #
     corrs_list = []
     for j in range(1,18):
         url = "https://rtprac1.i.tgcloud.io:9000/graph/Goals/edges/goal/" + str(j) + "/correlation"
-        r=requests.get(url, headers={'Authorization':'Bearer nthnehl40m4ftjmefsl8vc3uosfg4isc'})
+        r=requests.get(url, headers={'Authorization':'Bearer 03sctnp182af43kooj0mdj4ul1c995dt'})
         #for i in :
         corrs_matrix = {}
         res = json.loads(r.text)

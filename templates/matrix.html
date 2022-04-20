@@ -1,17 +1,25 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %} Sustainable Development Goals
 {% endblock %}
 
 
 {% block content %}
 					
+<div class="container">
+	<div class="row">
+       <h4> <a href= "/"> Click here to go Home  </a> </h4>
+		
+	</div>
+</div>
 
 
 <div class="container goalgrid">
 	<div class="row">
         <div class="col-md-12"></div>
-        <h2>Correlation Between Goals</h2>
+        <h2>Correlation Between Goals  (Synergies & Trade-Offs ) </h2> <br/>
         <table class="table table-bordered table-striped">
           <thead>
             <tr>
@@ -47,7 +55,7 @@
                                     
 
 
-                            <td>
+                            <td class="gscore" value= {{ v }}>
                                     {{ v }}
 
                             </td>
@@ -74,6 +82,20 @@
 
 </div>
 
+
+					
+<div class="container">
+	<div class="row">
+
+      <div class="col-md-12">
+
+        <img src= "{% static  'interconnections.jpg' %}" alt="img">
+
+
+      </div>
+
+	</div>
+</div>
 
 
 

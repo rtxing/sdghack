@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %} Sustainable Development Goals
+{% endblock %}
+
+
+{% block content %}
+					
+<div class="container">
+	<div class="row">
+		<div class = "col-md-12">
+		<h4> <a href= "/"> Click here to go Home  </a> </h4>
+		<h4>  <a href="/matrix"> Goals Inter Relationships </a> </h4>
+ 
+		<h4>  <a href="/knowledgegraph/{{ goal_no }}"> Click Here to go to knowledge Graph </a> </h4>
+		 
+	</div>
+</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		
+		<div class="col-md-12">
+		
+			<h2>Value Chain for Goal {{ goal_no }}</h2>
+			
+
+			<div class=" container container-md-fluid">
+				<div class="row ">
+					<div class="col-auto col-md-12 ">
+						<nav aria-label="breadcrumb " class="first d-md-flex">
+							<ol class="breadcrumb indigo lighten-6 first-1 shadow-lg mb-5 ">
+								<li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase " href="#"><span>SWOT Analysis </span></a><img class="ml-md-1" src="https://img.icons8.com/offices/30/000000/double-right.png" width="20" height="20"> </li>
+								<li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase" href="#"><span>Identify Stakeholders , Define Roles & Resp.</span></a><img class="ml-md-1" src="https://img.icons8.com/offices/30/000000/double-right.png" width="20" height="20"></li>
+								<li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase " href="#"><span>Financial Model</span></a><img class="ml-md-1" src="https://img.icons8.com/offices/30/000000/double-right.png" width="20" height="20"> </li>
+								<li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase " href="#"><span> System Design</span>></span></a><img class="ml-md-1" src="https://img.icons8.com/offices/30/000000/double-right.png" width="20" height="20"> </li>
+								<li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase " href="#"><span>Project Initiation</span></a><img class="ml-md-1" src="https://img.icons8.com/offices/30/000000/double-right.png" width="20" height="20"> </li>
+
+								<li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase" href="#"><span>Define Metrics, Risk, Deliverables</span></a><img class="ml-md-1" src="https://img.icons8.com/offices/30/000000/double-right.png" width="20" height="20"></li>
+								<li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase" href="#"><span>Setup Data Collection Nodal Centers</span></a><img class="ml-md-1" src="https://img.icons8.com/offices/30/000000/double-right.png" width="20" height="20"></li>
+								<li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase" href="#"><span>Capacity Building</span></a><img class="ml-md-1" src="https://img.icons8.com/offices/30/000000/double-right.png" width="20" height="20"></li>
+
+								<li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase " href="#"><span>Project Initiation</span></a><img class="ml-md-1" src="https://img.icons8.com/offices/30/000000/double-right.png" width="20" height="20"> </li>
+								<li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase " href="#"><span> Project Planning </span></a><img class="ml-md-1" src="https://img.icons8.com/offices/30/000000/double-right.png" width="20" height="20"> </li>
+								<li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase" href="#"><span> Project Execution</span></a><img class="ml-md-1" src="https://img.icons8.com/offices/30/000000/double-right.png" width="20" height="20"></li>
+								<li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase " href="#"><span> </span> Monitor Progress</a><img class="ml-md-1" src="https://img.icons8.com/offices/30/000000/double-right.png" width="20" height="20"> </li>
+
+
+							</ol>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+
+		
+		</div>
+
+
+
+	</div>
+</div>
+
+
+
+<div class="container">
+	<div class="row">
+       <h4>  Example Value Chain   </h4>
+		
+	   <div class="col-md-12">
+		<h5> Reference Link : <a target= "blank" href="https://www.researchgate.net/publication/314450804_Achieving_Sustainable_Development_through_Value_Chain"> Achieving Sustainable Development through Value Chain
+		</a> </h5>
+
+
+
+
+        <img src= "{% static  'example_value.png' %}" alt="img">
+
+
+      </div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

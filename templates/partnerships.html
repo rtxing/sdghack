@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %} Sustainable Development Goals
+{% endblock %}
+
+
+{% block content %}
+					
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+       <h4> <a href= "/"> Click here to go Home  </a> </h4>
+	   <h4>  <a href="/matrix"> Goals Inter Relationships </a> </h4>
+
+	   <h4>  <a href="/knowledgegraph/{{ goal_no }}"> Click Here to go to knowledge Graph </a> </h4>
+
+	</div>
+</div>
+</div>
+
+
+
+
+<div class="container goalgrid">
+	<div class="row">
+		
+		<div class="col-md-12">
+		
+			<h2> Partnerships /  Coordination among Stakeholders </h2>
+			<table class="table table-bordered">
+			  <thead>
+				<tr>
+					<th></th>
+				  <th>Roles</th>
+				  <th>Responsibilities</th>
+				  <th>Metrics</th>
+				  <th>Risks</th>
+				  <th>API's</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+					<td> <b> Public </b> </td>
+				  <td></td>
+				  <td></td>
+				  <td></td>
+				  <td></td>
+				  <td></td>
+				
+				
+				</tr>
+				<tr>
+					<td> <b> Government </b> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					
+				  
+				  </tr>
+				  <tr>
+					<td> <b> Businesses </b> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				
+				  
+				  </tr>
+				  <tr>
+					<td> <b> NGO's </b> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				
+				  
+				  </tr>
+				  <tr>
+					<td> <b> Civil-Societies </b> </td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					
+				  
+				  </tr>
+				
+
+				
+			  </tbody>
+			</table>
+		  
+
+
+		
+		</div>
+
+
+
+	</div>
+</div>
+
+
+<br/><br/>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+       <h4>  Example Goal Partnerships   </h4>
+	   <h5> Reference Link : <a target= "blank" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT4cnyfhrcS3QYsYqYP523TFZ5Zz5L4NwcG8qzbdIkKSO03SaadA9NJ3KrOEEIXyA_mgJsUXShKukiU/pubhtml?gid=0&single=true&widget=true&headers=false"> https://docs.google.com/spreadsheets/d/e/2PACX-1vT4cnyfhrcS3QYsYqYP523TFZ5Zz5L4NwcG8qzbdIkKSO03SaadA9NJ3KrOEEIXyA_mgJsUXShKukiU/pubhtml?gid=0&single=true&widget=true&headers=false&urp=gmail_link  </a> </h5>
+		
+	  
+
+        <img src= "{% static  'partner.png' %}" alt="img">
+
+
+      </div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block title %} Sustainable Development Goals
+{% endblock %}
+
+
+{% block content %}
+					
+
+<div class="container">
+	<div class="row">
+       <h4> <a href= "/"> Click here to go Home  </a> </h4>
+		
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+       <h4>  Knowledge Graph for Goal {{ goal_no }}</h4>
+		
+	</div>
+</div>
+
+<div class="container goalgrid">
+	<div class="row">
+	
+		<div class="col-md-3 kgdiv">
+			<a href="/value/{{ goal_no }}">
+			<i class='fas fa-stamp' style='font-size:24px'></i>
+
+
+		 Goal Value Chain
+
+			</a>
+		</div>
+
+		<div class="col-md-3 kgdiv">
+			<i class='fas fa-chart-line' style='font-size:24px'></i>
+
+
+		Goal Progress
+		</div>
+
+		<div class="col-md-3 kgdiv">
+			<a href="/goalsinter/{{ goal_no }}">
+
+			<i class='fas fa-certificate' style='font-size:24px'></i>
+
+
+		 Goal Inter relations
+			</a>
+		</div>
+
+
+	</div>
+
+	<div class="row">
+	
+		<div class="col-md-3 kgdiv">
+			<a href="/success">
+			<i class='fas fa-comments-dollar' style='font-size:24px'></i>
+
+
+		 Success Stories, Case - Studies
+		</a>
+		</div>
+
+		<div class="col-md-3 kgdiv">
+			<a href="/partnerships/{{ goal_no }}">
+			<i class='fas fa-american-sign-language-interpreting' style='font-size:24px'></i>
+
+		  Partnerships
+
+		</a>
+		</div>
+
+		<div class="col-md-3 kgdiv">
+			<i class='fas fa-landmark' style='font-size:24px'></i>
+
+
+				Financial Resources
+		</div>
+
+
+	</div>
+
+	<div class="row">
+	
+		<div class="col-md-3 kgdiv">
+
+			<i class='fas fa-hand-holding-usd' style='font-size:24px'></i>
+ 		
+
+			Incentivization
+		</div>
+
+		<div class="col-md-3 kgdiv">
+			<i class='fas fa-bullhorn' style='font-size:24px'></i>
+  Advisory
+		</div>
+
+		<div class="col-md-3 kgdiv">
+			<i class='fas fa-coins' style='font-size:24px'></i>
+  Knowledge Database
+		</div>
+
+
+	</div>
+
+	
+	<div class="row">
+	
+		<div class="col-md-3 kgdiv">
+			<i class='fas fa-comments' style='font-size:24px'></i>
+
+
+			Polls
+		</div>
+
+		<div class="col-md-3 kgdiv">
+			<i class='fas fa-chart-bar' style='font-size:24px'></i>  &nbsp;&nbsp;&nbsp; Analytics
+		</div>
+
+		<div class="col-md-3 kgdiv">
+<i class='fas fa-globe' style='font-size:24px'></i>
+ Targets / Indicators
+		</div>
+
+
+	</div>
+
+
+
+</div>
+
+
+<br/>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+       <h4>  Sample Knowledge Graphs  </h4>
+		
+	  
+
+        <img src= "{% static  'kg1.png' %}" alt="img">
+
+		<img src= "{% static  'kg2.png' %}" alt="img">
+
+		<img src= "{% static  'kg_pic.png' %}" alt="img">
+
+
+      </div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

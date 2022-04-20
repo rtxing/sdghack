@@ -7,16 +7,22 @@
 {% block content %}
 					
 
+<div class="container">
+	<div class="row">
+       <h4>  <a href="/matrix"> Correlation Between Goals ( Inter Relationships ) </a> </h4>
+		
+	</div>
+</div>
 
 <div class="container goalgrid">
 	<div class="row">
-
 		{% for i in goals %}
 		<div class="col-md-2 goalbox">
 		
 	<a href="/tni/{{ i.attributes.Goal_no }}">	<h4>	{{ i.attributes.Goal_no }}.     	{{ i.attributes.Goal_short }}  </h4>
 		
-		</a>
+		</a> <br/>
+		<div> <a href = "knowledgegraph/{{ i.attributes.Goal_no }}" >Knowledge Graph  </a>  </div>
 	</div>
 
 		{% endfor %}

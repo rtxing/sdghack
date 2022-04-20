@@ -17,16 +17,27 @@ from django.contrib import admin
 from django.urls import path, include
 from goals import views
 
+from django.conf import settings
+from django.conf.urls.static import static
+
+
 urlpatterns = [
     path(r'', views.home),
     path(r'tni/<goal_no>', views.tni),
     path(r'tracking', views.tracking),
     path(r'matrix', views.matrix),
+    path(r'knowledgegraph/<goal_no>', views.kg),
+    path(r'goalsinter/<goal_no>', views.goalsinter),
+    path(r'value/<goal_no>', views.value),
+    path(r'partnerships/<goal_no>', views.partnerships),
+    path(r'success', views.success),
     #path(r'home', views.home),
     #path(r'tree1/', views.tree1),
     #path(r'accounts/profile/', views.profile),
     #path(r'postproblem/', views.postproblem),
     #path(r'postproblem2/', views.postproblem2),
     #path('admin/', admin.site.urls),
-    path('__debug__/', include('debug_toolbar.urls')), 
-]
+    #path(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root':settings.STATIC_ROOT}),
+
+    #path('__debug__/', include('debug_toolbar.urls')), 
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

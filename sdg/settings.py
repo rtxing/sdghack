@@ -38,9 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'problems',
+    #'problems',
     'goals',
-     "debug_toolbar",
+     #"debug_toolbar",
 ]
 
 MIDDLEWARE = [
@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
+    #"debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
 ROOT_URLCONF = 'sdg.urls'
@@ -131,7 +131,12 @@ INTERNAL_IPS = [
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
@@ -144,4 +149,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window; you may, of course, use a different value.
 REGISTRATION_AUTO_LOGIN = True # Automatically log the user in.
 
-AUTH_USER_MODEL = 'problems.Mapuser'
+#AUTH_USER_MODEL = 'problems.Mapuser'
