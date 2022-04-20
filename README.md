@@ -47,7 +47,7 @@ The size of the market depends on the goal. For example Goal no. 11: Sustainable
 
 ## Visuals: 
        
-**Link to our Website where the solution is hosted: https://rtrao99.pythonanywhere.com/**
+
 
 ## Dependencies
 The dependencies are mentioned in the requirements.txt file.
@@ -96,8 +96,9 @@ However we did all of our best efforts to overcome all the problems we faced, wi
 
 
 Some reference links:
-https://www.researchgate.net/publication/314450804_Achieving_Sustainable_Development_through_Value_Chain
-https://knowsdgs.jrc.ec.europa.eu/interlinkages-visualization
+1. https://www.researchgate.net/publication/314450804_Achieving_Sustainable_Development_through_Value_Chain
+2. https://knowsdgs.jrc.ec.europa.eu/interlinkages-visualization
 
+**Link to our Website where the solution is hosted: https://rtrao99.pythonanywhere.com/**
 
 
